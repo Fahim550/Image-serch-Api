@@ -1,0 +1,55 @@
+body{
+    background-color: cadetblue;
+}
+.header{
+    font-weight: 700;
+    font-style: oblique;
+    color: rgb(3, 34, 77);
+}
+.btn {
+    background-color:darkslategrey;
+    margin-left: 5px;
+}
+.btn:hover{
+    background-image: linear-gradient(to left, rgb(30, 255, 0) ,black);
+}
+.imageparent {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+   margin: 5px;
+   color: white;
+   font-size: 19px;
+   font-weight: 500;
+   background-color: rgb(58, 178, 205);
+   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+   cursor: pointer;
+   min-height: 350px;
+   max-height: 400px;
+   /* background-image: linear-gradient( to left yellow aqua); */
+}
+.card:hover{
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
+}
+/* #image img{
+    width: 600px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+#image p{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: ;
+    color: rgb(248, 248, 248);
+    font-weight: 500;
+    font-size: 30px;
+} */
