@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
     fetch(`https://pixabay.com/api/?key=22001713-36c15d23a30ca4b2a2ff11d59&q=${input.value}`)
         .then(response => response.json())
         .then((json) => {
-            // console.log(json.hits)
+            console.log(json.hits)
             const tenPhotos = json.hits
             // const tenPhotos = json.slice(0, 10)
             // console.log(tenPhotos)

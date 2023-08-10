@@ -22,21 +22,37 @@ body{
 }
 .card {
    margin: 5px;
+   margin-top: 15px;
    color: white;
    font-size: 19px;
    font-weight: 500;
-   background-color: rgb(58, 178, 205);
+   background-color: rgb(112, 191, 209);
    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
    cursor: pointer;
-   min-height: 350px;
+   min-height: 250px;
    max-height: 400px;
    /* background-image: linear-gradient( to left yellow aqua); */
 }
 .card:hover{
-    transform: scale(1.15);
+    transform: scale(1.12);
     box-shadow: 0 10px 20px rgba(0,0,0,.20), 0 4px 8px rgba(0,0,0,.06);
 }
+@media (max-width:1024px){
+    .card{
+        display: flex;
+        /* columns: 100px 3; */
+        width: 45%;
+    }
+}
+@media (max-width:850px){
+    .card{
+        display: block;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
 /* #image img{
     width: 600px;
     display: block;
